@@ -1,0 +1,39 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion '24.0.3'
+
+
+    defaultConfig {
+        applicationId "com.fitbit.sampleandroidoauth2"
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    dataBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':fitbitapi')
+    compile project(':fitbitauth')
+    compile 'com.android.support:appcompat-v7:27.1.1'
+    compile 'com.android.support:design:27.1.1'
+    compile 'com.android.support:support-v13:27.+'
+    compile 'com.jjoe64:graphview:4.+'
+    testCompile 'junit:junit:4.+'
+    compile 'com.android.support:support-annotations:+'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+}
+

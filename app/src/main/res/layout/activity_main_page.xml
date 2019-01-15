@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.fitbit.sampleandroidoauth2.MainPageActivity"
+
+    >
+
+    <TextView
+        android:id="@+id/textView_login_click_2"
+        android:layout_width="186dp"
+        android:layout_height="38dp"
+        android:baselineAligned="false"
+        android:text="WELCOME BACK"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.033" />
+
+    <TextView
+        android:id="@+id/textView_today_steps"
+        android:layout_width="328dp"
+        android:layout_height="28dp"
+        android:text="Today's Steps"
+        tools:layout_editor_absoluteX="62dp"
+        tools:layout_editor_absoluteY="87dp" />
+
+    <TextView
+        android:id="@+id/textView_total_redeemed_steps"
+        android:layout_width="328dp"
+        android:layout_height="26dp"
+        android:text="Total Redeemed Steps"
+        tools:layout_editor_absoluteX="62dp"
+        tools:layout_editor_absoluteY="132dp" />
+
+    <TextView
+        android:id="@+id/textView_steps_available_for_redeem"
+        android:layout_width="328dp"
+        android:layout_height="21dp"
+        android:text="Steps Available For Redeem"
+        tools:layout_editor_absoluteX="62dp"
+        tools:layout_editor_absoluteY="169dp" />
+
+    <Button
+        android:id="@+id/button_redeem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REDEEM"
+        tools:layout_editor_absoluteX="129dp"
+        tools:layout_editor_absoluteY="231dp" />
+
+
+
+</LinearLayout>
+
